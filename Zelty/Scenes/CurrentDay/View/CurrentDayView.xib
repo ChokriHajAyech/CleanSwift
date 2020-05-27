@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentDayViewController" customModule="Zelty" customModuleProvider="target">
+            <connections>
+                <outlet property="countryLabel" destination="VFU-U2-HEo" id="ocv-HP-yQJ"/>
+                <outlet property="humidityLabel" destination="toh-e4-ptk" id="oYw-6l-0h7"/>
+                <outlet property="mapView" destination="MJS-Ft-MNb" id="wGf-Vp-Ele"/>
+                <outlet property="maxTemperatureLabel" destination="jtw-tD-vIq" id="IGj-Ps-U92"/>
+                <outlet property="minTemperatureLabel" destination="gcf-Hn-ZXL" id="qfv-K1-k7H"/>
+                <outlet property="temperatureLabel" destination="6wI-z6-nZY" id="5nE-6N-RCv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cok-6O-8P8" userLabel="Container">
+                    <rect key="frame" x="20" y="97" width="984" height="427"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MJS-Ft-MNb">
+                            <rect key="frame" x="5" y="5" width="974" height="300"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="YcH-Qp-i9v"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="RGc-43-fNl"/>
+                            </connections>
+                        </mapView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-z6-nZY">
+                            <rect key="frame" x="5" y="313" width="974" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Min Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-Hn-ZXL" userLabel="MinTemperature">
+                            <rect key="frame" x="5" y="344" width="974" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Max Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-tD-vIq" userLabel="MaxTemperature">
+                            <rect key="frame" x="5" y="375" width="974" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toh-e4-ptk">
+                            <rect key="frame" x="5" y="401" width="974" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6m-5m-pS1" userLabel="Toute la semaine">
+                            <rect key="frame" x="844" y="388" width="130" height="34"/>
+                            <color key="backgroundColor" red="0.4017254597453368" green="0.67271020146156157" blue="1" alpha="0.80634631849315064" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="3KT-Qn-9b9"/>
+                                <constraint firstAttribute="width" constant="130" id="KQY-dZ-lH0"/>
+                            </constraints>
+                            <state key="normal" title="Toue la semaine">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="weatherForWeek:" destination="-1" eventType="touchUpInside" id="zUg-yz-vLT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6wI-z6-nZY" firstAttribute="top" secondItem="MJS-Ft-MNb" secondAttribute="bottom" constant="8" id="4wC-Nd-Hj0"/>
+                        <constraint firstItem="6wI-z6-nZY" firstAttribute="leading" secondItem="cok-6O-8P8" secondAttribute="leading" constant="5" id="B01-4e-SOe"/>
+                        <constraint firstItem="gcf-Hn-ZXL" firstAttribute="leading" secondItem="cok-6O-8P8" secondAttribute="leading" constant="5" id="IeT-0H-ica"/>
+                        <constraint firstAttribute="bottom" secondItem="l6m-5m-pS1" secondAttribute="bottom" constant="5" id="JdX-uR-k2Z"/>
+                        <constraint firstItem="MJS-Ft-MNb" firstAttribute="top" secondItem="cok-6O-8P8" secondAttribute="top" constant="5" id="KFd-jL-zeZ"/>
+                        <constraint firstAttribute="trailing" secondItem="MJS-Ft-MNb" secondAttribute="trailing" constant="5" id="MUF-Kv-ouN"/>
+                        <constraint firstItem="MJS-Ft-MNb" firstAttribute="leading" secondItem="cok-6O-8P8" secondAttribute="leading" constant="5" id="Mou-F8-RXj"/>
+                        <constraint firstItem="jtw-tD-vIq" firstAttribute="leading" secondItem="cok-6O-8P8" secondAttribute="leading" constant="5" id="Pet-wM-vju"/>
+                        <constraint firstAttribute="trailing" secondItem="jtw-tD-vIq" secondAttribute="trailing" constant="5" id="Zsv-Pu-p9X"/>
+                        <constraint firstItem="gcf-Hn-ZXL" firstAttribute="top" secondItem="6wI-z6-nZY" secondAttribute="bottom" constant="10" id="byx-QZ-TXp"/>
+                        <constraint firstAttribute="bottom" secondItem="toh-e4-ptk" secondAttribute="bottom" constant="5" id="eM1-GM-yej"/>
+                        <constraint firstItem="toh-e4-ptk" firstAttribute="top" secondItem="jtw-tD-vIq" secondAttribute="bottom" constant="5" id="fmX-mt-g7M"/>
+                        <constraint firstAttribute="trailing" secondItem="l6m-5m-pS1" secondAttribute="trailing" constant="10" id="gYc-55-tQ7"/>
+                        <constraint firstItem="jtw-tD-vIq" firstAttribute="top" secondItem="gcf-Hn-ZXL" secondAttribute="bottom" constant="10" id="gch-ZW-qxg"/>
+                        <constraint firstAttribute="trailing" secondItem="gcf-Hn-ZXL" secondAttribute="trailing" constant="5" id="lab-z0-C6E"/>
+                        <constraint firstItem="toh-e4-ptk" firstAttribute="leading" secondItem="cok-6O-8P8" secondAttribute="leading" constant="5" id="mPK-OR-aWP"/>
+                        <constraint firstAttribute="trailing" secondItem="toh-e4-ptk" secondAttribute="trailing" constant="5" id="ptK-G8-xWC"/>
+                        <constraint firstAttribute="trailing" secondItem="6wI-z6-nZY" secondAttribute="trailing" constant="5" id="s6a-JE-sQk"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="France" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFU-U2-HEo" userLabel="Country">
+                    <rect key="frame" x="20" y="50" width="994" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cok-6O-8P8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="9Zq-ad-wfm"/>
+                <constraint firstItem="VFU-U2-HEo" firstAttribute="leading" secondItem="cok-6O-8P8" secondAttribute="leading" id="A5b-Hs-nFg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cok-6O-8P8" secondAttribute="bottom" id="G9S-tl-rX1"/>
+                <constraint firstItem="cok-6O-8P8" firstAttribute="top" secondItem="VFU-U2-HEo" secondAttribute="bottom" constant="26" id="HwB-GT-hW3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cok-6O-8P8" secondAttribute="trailing" constant="20" id="Mkb-QX-gvN"/>
+                <constraint firstItem="VFU-U2-HEo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="eVU-WG-rAx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VFU-U2-HEo" secondAttribute="trailing" constant="10" id="yFj-vZ-hht"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="16.40625" y="109.37042459736456"/>
+        </view>
+    </objects>
+</document>

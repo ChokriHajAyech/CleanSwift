@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CountryDB" representedClassName="CountryDB" syncable="YES" codeGenerationType="class">
+        <attribute name="alpha2CodeDB" optional="YES" attributeType="String"/>
+        <attribute name="capitaDB" optional="YES" attributeType="String"/>
+        <attribute name="nameDB" optional="YES" attributeType="String"/>
+        <relationship name="currentDay" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CurrentDayDB" inverseName="country" inverseEntity="CurrentDayDB"/>
+        <relationship name="weekly" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="WeeklyDB" inverseName="country" inverseEntity="WeeklyDB"/>
+    </entity>
+    <entity name="CurrentDayDB" representedClassName="CurrentDayDB" syncable="YES" codeGenerationType="class">
+        <attribute name="humidityDB" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lanDB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lonDB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="maxTemperatureDB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="minTemperatureDB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="temperatureDB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CountryDB" inverseName="currentDay" inverseEntity="CountryDB"/>
+    </entity>
+    <entity name="ItemDB" representedClassName="ItemDB" syncable="YES" codeGenerationType="class">
+        <attribute name="dateDB" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="mainDB" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="weathers" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="WeatherDB" inverseName="item" inverseEntity="WeatherDB"/>
+        <relationship name="weekly" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="WeeklyDB" inverseName="items" inverseEntity="WeeklyDB"/>
+    </entity>
+    <entity name="WeatherDB" representedClassName="WeatherDB" syncable="YES" codeGenerationType="class">
+        <attribute name="weatherDescriptionDB" optional="YES" attributeType="String"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ItemDB" inverseName="weathers" inverseEntity="ItemDB"/>
+    </entity>
+    <entity name="WeeklyDB" representedClassName="WeeklyDB" syncable="YES" codeGenerationType="class">
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CountryDB" inverseName="weekly" inverseEntity="CountryDB"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ItemDB" inverseName="weekly" inverseEntity="ItemDB"/>
+    </entity>
+    <elements>
+        <element name="CountryDB" positionX="-1017.1953125" positionY="-770.05078125" width="128" height="118"/>
+        <element name="CurrentDayDB" positionX="-828.1953125" positionY="-948.65234375" width="128" height="148"/>
+        <element name="WeeklyDB" positionX="-838.1328125" positionY="-672.515625" width="128" height="73"/>
+        <element name="ItemDB" positionX="-650.20703125" positionY="-703.7734375" width="128" height="103"/>
+        <element name="WeatherDB" positionX="-682.29296875" positionY="-464.8828125" width="128" height="73"/>
+    </elements>
+</model>

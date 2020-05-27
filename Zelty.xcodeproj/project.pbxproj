@@ -1,0 +1,1299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FDBAB93B65A4D16BA3AC3A7 /* Pods_Zelty_ZeltyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C583CC297FA7516431337E10 /* Pods_Zelty_ZeltyUITests.framework */; };
+		807EE9A52472A1F600C721A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9A42472A1F600C721A8 /* AppDelegate.swift */; };
+		807EE9A72472A1F600C721A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9A62472A1F600C721A8 /* SceneDelegate.swift */; };
+		807EE9AE2472A1F800C721A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807EE9AD2472A1F800C721A8 /* Assets.xcassets */; };
+		807EE9B12472A1F800C721A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807EE9AF2472A1F800C721A8 /* LaunchScreen.storyboard */; };
+		807EE9C72472A1F800C721A8 /* ZeltyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9C62472A1F800C721A8 /* ZeltyUITests.swift */; };
+		807EE9DB2472C22600C721A8 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9D82472C22600C721A8 /* Codable.swift */; };
+		807EE9DC2472C22600C721A8 /* WeatherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9D92472C22600C721A8 /* WeatherError.swift */; };
+		807EE9DD2472C22600C721A8 /* ServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9DA2472C22600C721A8 /* ServerService.swift */; };
+		807EE9E02472C45000C721A8 /* Conf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9DF2472C45000C721A8 /* Conf.swift */; };
+		807EE9E32472C6FA00C721A8 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9E22472C6FA00C721A8 /* ServiceFactory.swift */; };
+		807EE9EA2472C74000C721A8 /* DemoWeeklyForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9E62472C74000C721A8 /* DemoWeeklyForecastService.swift */; };
+		807EE9EB2472C74000C721A8 /* WeeklyForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9E72472C74000C721A8 /* WeeklyForecastService.swift */; };
+		807EE9EC2472C74000C721A8 /* ServerWeeklyForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9E92472C74000C721A8 /* ServerWeeklyForecastService.swift */; };
+		807EE9F02472CB2600C721A8 /* DemoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9EF2472CB2500C721A8 /* DemoService.swift */; };
+		807EE9F52472CE3900C721A8 /* CacheWeeklyForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9F42472CE3900C721A8 /* CacheWeeklyForecastService.swift */; };
+		807EEA002472ED1500C721A8 /* DemoCurrentDayForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9FA2472ED1500C721A8 /* DemoCurrentDayForecastService.swift */; };
+		807EEA012472ED1500C721A8 /* CacheCurrentDayForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9FC2472ED1500C721A8 /* CacheCurrentDayForecastService.swift */; };
+		807EEA022472ED1500C721A8 /* ServerCurrentDayForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9FE2472ED1500C721A8 /* ServerCurrentDayForecastService.swift */; };
+		807EEA032472ED1500C721A8 /* CurrentDayForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EE9FF2472ED1500C721A8 /* CurrentDayForecastService.swift */; };
+		807EEA052472F16500C721A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EEA042472F16500C721A8 /* NetworkManager.swift */; };
+		807EEA112472FB9300C721A8 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EEA0F2472FB9300C721A8 /* CacheService.swift */; };
+		807EEA122472FB9300C721A8 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807EEA102472FB9300C721A8 /* CoreDataStore.swift */; };
+		807EEA1624730B5B00C721A8 /* Zelty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 807EEA1424730B5B00C721A8 /* Zelty.xcdatamodeld */; };
+		809D75062474CE4C004FF5FE /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D75052474CE4C004FF5FE /* Mocks.swift */; };
+		809D750B2475189D004FF5FE /* WeeklyInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D750A2475189D004FF5FE /* WeeklyInteractorTests.swift */; };
+		809D750E24752257004FF5FE /* WeeklyPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D750D24752257004FF5FE /* WeeklyPresenterTests.swift */; };
+		809D751024752843004FF5FE /* WeeklyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D750F24752843004FF5FE /* WeeklyViewControllerTests.swift */; };
+		80AD000124739F040006147C /* CountriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD000024739F040006147C /* CountriesWorker.swift */; };
+		80AD00032473A1760006147C /* CountriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD00022473A1760006147C /* CountriesPresenter.swift */; };
+		80ADFFD62473659D0006147C /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFD52473659D0006147C /* CountriesService.swift */; };
+		80ADFFDB247366840006147C /* DemoCountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFDA247366840006147C /* DemoCountriesService.swift */; };
+		80ADFFDD247366950006147C /* CacheCountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFDC247366950006147C /* CacheCountriesService.swift */; };
+		80ADFFDF247366A20006147C /* ServerCountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFDE247366A20006147C /* ServerCountriesService.swift */; };
+		80ADFFE724737C810006147C /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80ADFFE524737C810006147C /* CountryCell.xib */; };
+		80ADFFEA24737EF80006147C /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFE824737EF80006147C /* CountriesViewController.swift */; };
+		80ADFFEB24737EF80006147C /* CountriesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80ADFFE924737EF80006147C /* CountriesView.xib */; };
+		80ADFFED247380580006147C /* CountriesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFEC247380580006147C /* CountriesModels.swift */; };
+		80ADFFEF247381570006147C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFEE247381570006147C /* Models.swift */; };
+		80ADFFF724738A2C0006147C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFF624738A2C0006147C /* NavigationController.swift */; };
+		80ADFFFA247392680006147C /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFF9247392680006147C /* CountryCell.swift */; };
+		80ADFFFD24739C2C0006147C /* CountriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFFC24739C2C0006147C /* CountriesProtocols.swift */; };
+		80ADFFFF24739D9B0006147C /* CountriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFFFE24739D9B0006147C /* CountriesInteractor.swift */; };
+		80B2878924740E260011E144 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2878824740E260011E144 /* Extension.swift */; };
+		80B2878B2474142D0011E144 /* CountriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2878A2474142D0011E144 /* CountriesRouter.swift */; };
+		80B2878D247428CD0011E144 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2878C247428CD0011E144 /* WebImageView.swift */; };
+		80B28792247439030011E144 /* CurrentDayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B28790247439030011E144 /* CurrentDayView.xib */; };
+		80B28794247439280011E144 /* CurrentDayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B28793247439280011E144 /* CurrentDayInteractor.swift */; };
+		80B287962474393D0011E144 /* CurrentDayWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287952474393D0011E144 /* CurrentDayWorker.swift */; };
+		80B28798247439480011E144 /* CurrentDayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B28797247439480011E144 /* CurrentDayPresenter.swift */; };
+		80B2879A247439530011E144 /* CurrentDayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B28799247439530011E144 /* CurrentDayRouter.swift */; };
+		80B2879C247439610011E144 /* CurrentDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2879B247439610011E144 /* CurrentDayModel.swift */; };
+		80B2879E247446860011E144 /* CurrentDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B2879D247446860011E144 /* CurrentDayViewController.swift */; };
+		80B287A324744A6E0011E144 /* CurrentDayProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287A224744A6E0011E144 /* CurrentDayProtocols.swift */; };
+		80B287A724747D230011E144 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287A624747D230011E144 /* Formatters.swift */; };
+		80B287AB24747E600011E144 /* WeeklyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287AA24747E600011E144 /* WeeklyProtocols.swift */; };
+		80B287AD24747F7B0011E144 /* WeeklyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287AC24747F7B0011E144 /* WeeklyModel.swift */; };
+		80B287AF2474834E0011E144 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287AE2474834E0011E144 /* WeeklyViewController.swift */; };
+		80B287B1247484E70011E144 /* WeeklyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287B0247484E70011E144 /* WeeklyInteractor.swift */; };
+		80B287B3247485000011E144 /* WeeklyWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287B2247485000011E144 /* WeeklyWorker.swift */; };
+		80B287B52474850E0011E144 /* WeeklyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287B42474850E0011E144 /* WeeklyRouter.swift */; };
+		80B287B7247485630011E144 /* WeeklyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287B6247485630011E144 /* WeeklyPresenter.swift */; };
+		80B287B9247491940011E144 /* WeeklyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B287B8247491940011E144 /* WeeklyView.xib */; };
+		80B287CA2474A09E0011E144 /* WeeklyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B287C82474A09E0011E144 /* WeeklyCell.swift */; };
+		80B287CB2474A09E0011E144 /* WeeklyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B287C92474A09E0011E144 /* WeeklyCell.xib */; };
+		89AA59950F387EA3CE17F76D /* Pods_ZeltyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508AE155C897F24C55ABB2FB /* Pods_ZeltyTests.framework */; };
+		C9C3A0BE5F250DD9AA49EB43 /* Pods_Zelty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A2A75F195340D272EA0443 /* Pods_Zelty.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		807EE9B82472A1F800C721A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 807EE9992472A1F600C721A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 807EE9A02472A1F600C721A8;
+			remoteInfo = Zelty;
+		};
+		807EE9C32472A1F800C721A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 807EE9992472A1F600C721A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 807EE9A02472A1F600C721A8;
+			remoteInfo = Zelty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F8DB46A262EEDCDE9C99BAB /* Pods-ZeltyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeltyTests.debug.xcconfig"; path = "Target Support Files/Pods-ZeltyTests/Pods-ZeltyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		508AE155C897F24C55ABB2FB /* Pods_ZeltyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeltyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5668B730A7C02123B7226951 /* Pods-ZeltyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeltyTests.release.xcconfig"; path = "Target Support Files/Pods-ZeltyTests/Pods-ZeltyTests.release.xcconfig"; sourceTree = "<group>"; };
+		807EE9A12472A1F600C721A8 /* Zelty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zelty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		807EE9A42472A1F600C721A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		807EE9A62472A1F600C721A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		807EE9AD2472A1F800C721A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		807EE9B02472A1F800C721A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		807EE9B22472A1F800C721A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		807EE9B72472A1F800C721A8 /* ZeltyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeltyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		807EE9BD2472A1F800C721A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		807EE9C22472A1F800C721A8 /* ZeltyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeltyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		807EE9C62472A1F800C721A8 /* ZeltyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeltyUITests.swift; sourceTree = "<group>"; };
+		807EE9C82472A1F800C721A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		807EE9D82472C22600C721A8 /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		807EE9D92472C22600C721A8 /* WeatherError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherError.swift; sourceTree = "<group>"; };
+		807EE9DA2472C22600C721A8 /* ServerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerService.swift; sourceTree = "<group>"; };
+		807EE9DF2472C45000C721A8 /* Conf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conf.swift; sourceTree = "<group>"; };
+		807EE9E22472C6FA00C721A8 /* ServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		807EE9E62472C74000C721A8 /* DemoWeeklyForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoWeeklyForecastService.swift; sourceTree = "<group>"; };
+		807EE9E72472C74000C721A8 /* WeeklyForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyForecastService.swift; sourceTree = "<group>"; };
+		807EE9E92472C74000C721A8 /* ServerWeeklyForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerWeeklyForecastService.swift; sourceTree = "<group>"; };
+		807EE9EF2472CB2500C721A8 /* DemoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoService.swift; sourceTree = "<group>"; };
+		807EE9F42472CE3900C721A8 /* CacheWeeklyForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheWeeklyForecastService.swift; sourceTree = "<group>"; };
+		807EE9FA2472ED1500C721A8 /* DemoCurrentDayForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCurrentDayForecastService.swift; sourceTree = "<group>"; };
+		807EE9FC2472ED1500C721A8 /* CacheCurrentDayForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheCurrentDayForecastService.swift; sourceTree = "<group>"; };
+		807EE9FE2472ED1500C721A8 /* ServerCurrentDayForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCurrentDayForecastService.swift; sourceTree = "<group>"; };
+		807EE9FF2472ED1500C721A8 /* CurrentDayForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentDayForecastService.swift; sourceTree = "<group>"; };
+		807EEA042472F16500C721A8 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		807EEA0F2472FB9300C721A8 /* CacheService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		807EEA102472FB9300C721A8 /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		807EEA1524730B5B00C721A8 /* Zelty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zelty.xcdatamodel; sourceTree = "<group>"; };
+		809D75052474CE4C004FF5FE /* Mocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		809D750A2475189D004FF5FE /* WeeklyInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyInteractorTests.swift; sourceTree = "<group>"; };
+		809D750D24752257004FF5FE /* WeeklyPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyPresenterTests.swift; sourceTree = "<group>"; };
+		809D750F24752843004FF5FE /* WeeklyViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewControllerTests.swift; sourceTree = "<group>"; };
+		80AD000024739F040006147C /* CountriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWorker.swift; sourceTree = "<group>"; };
+		80AD00022473A1760006147C /* CountriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesPresenter.swift; sourceTree = "<group>"; };
+		80ADFFD52473659D0006147C /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
+		80ADFFDA247366840006147C /* DemoCountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCountriesService.swift; sourceTree = "<group>"; };
+		80ADFFDC247366950006147C /* CacheCountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheCountriesService.swift; sourceTree = "<group>"; };
+		80ADFFDE247366A20006147C /* ServerCountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCountriesService.swift; sourceTree = "<group>"; };
+		80ADFFE524737C810006147C /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
+		80ADFFE824737EF80006147C /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		80ADFFE924737EF80006147C /* CountriesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesView.xib; sourceTree = "<group>"; };
+		80ADFFEC247380580006147C /* CountriesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModels.swift; sourceTree = "<group>"; };
+		80ADFFEE247381570006147C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		80ADFFF624738A2C0006147C /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		80ADFFF9247392680006147C /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		80ADFFFC24739C2C0006147C /* CountriesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesProtocols.swift; sourceTree = "<group>"; };
+		80ADFFFE24739D9B0006147C /* CountriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesInteractor.swift; sourceTree = "<group>"; };
+		80B2878824740E260011E144 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		80B2878A2474142D0011E144 /* CountriesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesRouter.swift; sourceTree = "<group>"; };
+		80B2878C247428CD0011E144 /* WebImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
+		80B28790247439030011E144 /* CurrentDayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentDayView.xib; sourceTree = "<group>"; };
+		80B28793247439280011E144 /* CurrentDayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDayInteractor.swift; sourceTree = "<group>"; };
+		80B287952474393D0011E144 /* CurrentDayWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDayWorker.swift; sourceTree = "<group>"; };
+		80B28797247439480011E144 /* CurrentDayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDayPresenter.swift; sourceTree = "<group>"; };
+		80B28799247439530011E144 /* CurrentDayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDayRouter.swift; sourceTree = "<group>"; };
+		80B2879B247439610011E144 /* CurrentDayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDayModel.swift; sourceTree = "<group>"; };
+		80B2879D247446860011E144 /* CurrentDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentDayViewController.swift; path = Zelty/Scenes/CurrentDay/CurrentDayViewController.swift; sourceTree = SOURCE_ROOT; };
+		80B287A224744A6E0011E144 /* CurrentDayProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDayProtocols.swift; sourceTree = "<group>"; };
+		80B287A624747D230011E144 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		80B287AA24747E600011E144 /* WeeklyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyProtocols.swift; sourceTree = "<group>"; };
+		80B287AC24747F7B0011E144 /* WeeklyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyModel.swift; sourceTree = "<group>"; };
+		80B287AE2474834E0011E144 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
+		80B287B0247484E70011E144 /* WeeklyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyInteractor.swift; sourceTree = "<group>"; };
+		80B287B2247485000011E144 /* WeeklyWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWorker.swift; sourceTree = "<group>"; };
+		80B287B42474850E0011E144 /* WeeklyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyRouter.swift; sourceTree = "<group>"; };
+		80B287B6247485630011E144 /* WeeklyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyPresenter.swift; sourceTree = "<group>"; };
+		80B287B8247491940011E144 /* WeeklyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeeklyView.xib; sourceTree = "<group>"; };
+		80B287C82474A09E0011E144 /* WeeklyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCell.swift; sourceTree = "<group>"; };
+		80B287C92474A09E0011E144 /* WeeklyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeeklyCell.xib; sourceTree = "<group>"; };
+		89A2A75F195340D272EA0443 /* Pods_Zelty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zelty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		985AE59F64EC27D629AEF14F /* Pods-Zelty-ZeltyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zelty-ZeltyUITests.release.xcconfig"; path = "Target Support Files/Pods-Zelty-ZeltyUITests/Pods-Zelty-ZeltyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A19CCDED218A238A83E8FCB5 /* Pods-Zelty-ZeltyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zelty-ZeltyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Zelty-ZeltyUITests/Pods-Zelty-ZeltyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C583CC297FA7516431337E10 /* Pods_Zelty_ZeltyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zelty_ZeltyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28447EEA1804F66BCF3D7C0 /* Pods-Zelty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zelty.release.xcconfig"; path = "Target Support Files/Pods-Zelty/Pods-Zelty.release.xcconfig"; sourceTree = "<group>"; };
+		F93BE4FF178E7EAA65093556 /* Pods-Zelty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zelty.debug.xcconfig"; path = "Target Support Files/Pods-Zelty/Pods-Zelty.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		807EE99E2472A1F600C721A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C3A0BE5F250DD9AA49EB43 /* Pods_Zelty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		807EE9B42472A1F800C721A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AA59950F387EA3CE17F76D /* Pods_ZeltyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		807EE9BF2472A1F800C721A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDBAB93B65A4D16BA3AC3A7 /* Pods_Zelty_ZeltyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54F360D814310B3A22FD1435 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F93BE4FF178E7EAA65093556 /* Pods-Zelty.debug.xcconfig */,
+				F28447EEA1804F66BCF3D7C0 /* Pods-Zelty.release.xcconfig */,
+				A19CCDED218A238A83E8FCB5 /* Pods-Zelty-ZeltyUITests.debug.xcconfig */,
+				985AE59F64EC27D629AEF14F /* Pods-Zelty-ZeltyUITests.release.xcconfig */,
+				2F8DB46A262EEDCDE9C99BAB /* Pods-ZeltyTests.debug.xcconfig */,
+				5668B730A7C02123B7226951 /* Pods-ZeltyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		807EE9982472A1F600C721A8 = {
+			isa = PBXGroup;
+			children = (
+				807EE9A32472A1F600C721A8 /* Zelty */,
+				807EE9BA2472A1F800C721A8 /* ZeltyTests */,
+				807EE9C52472A1F800C721A8 /* ZeltyUITests */,
+				807EE9A22472A1F600C721A8 /* Products */,
+				54F360D814310B3A22FD1435 /* Pods */,
+				EAA5B506693F01EB556A5A84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		807EE9A22472A1F600C721A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9A12472A1F600C721A8 /* Zelty.app */,
+				807EE9B72472A1F800C721A8 /* ZeltyTests.xctest */,
+				807EE9C22472A1F800C721A8 /* ZeltyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		807EE9A32472A1F600C721A8 /* Zelty */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9E12472C67900C721A8 /* Common */,
+				807EE9F62472D9FB00C721A8 /* Scenes */,
+				807EE9A42472A1F600C721A8 /* AppDelegate.swift */,
+				807EE9A62472A1F600C721A8 /* SceneDelegate.swift */,
+				807EE9AD2472A1F800C721A8 /* Assets.xcassets */,
+				807EE9AF2472A1F800C721A8 /* LaunchScreen.storyboard */,
+				807EE9B22472A1F800C721A8 /* Info.plist */,
+			);
+			path = Zelty;
+			sourceTree = "<group>";
+		};
+		807EE9BA2472A1F800C721A8 /* ZeltyTests */ = {
+			isa = PBXGroup;
+			children = (
+				809D75042474CE36004FF5FE /* Generated */,
+				809D75072474CEAD004FF5FE /* Weekly */,
+				807EE9BD2472A1F800C721A8 /* Info.plist */,
+			);
+			path = ZeltyTests;
+			sourceTree = "<group>";
+		};
+		807EE9C52472A1F800C721A8 /* ZeltyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9C62472A1F800C721A8 /* ZeltyUITests.swift */,
+				807EE9C82472A1F800C721A8 /* Info.plist */,
+			);
+			path = ZeltyUITests;
+			sourceTree = "<group>";
+		};
+		807EE9DE2472C45000C721A8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9DF2472C45000C721A8 /* Conf.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		807EE9E12472C67900C721A8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				80B287BB247495F20011E144 /* Helper */,
+				807EE9DE2472C45000C721A8 /* Config */,
+				80ADFFF524738A1C0006147C /* Navigation */,
+				807EE9F72472ECED00C721A8 /* Model */,
+				807EEA132472FBB200C721A8 /* CoreData */,
+				807EEA0B2472F7ED00C721A8 /* API */,
+				807EE9F12472CD2100C721A8 /* Network */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		807EE9E42472C74000C721A8 /* Weekly */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9E72472C74000C721A8 /* WeeklyForecastService.swift */,
+				807EE9E82472C74000C721A8 /* Server */,
+				807EE9ED2472C89900C721A8 /* Cache */,
+				807EE9E52472C74000C721A8 /* Demo */,
+			);
+			path = Weekly;
+			sourceTree = "<group>";
+		};
+		807EE9E52472C74000C721A8 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9E62472C74000C721A8 /* DemoWeeklyForecastService.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		807EE9E82472C74000C721A8 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9E92472C74000C721A8 /* ServerWeeklyForecastService.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		807EE9ED2472C89900C721A8 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9F42472CE3900C721A8 /* CacheWeeklyForecastService.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		807EE9F12472CD2100C721A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				807EEA0D2472FB4400C721A8 /* Network */,
+				807EEA0E2472FB9300C721A8 /* Cache */,
+				807EEA0C2472F85600C721A8 /* Demo */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		807EE9F62472D9FB00C721A8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFE224737C110006147C /* Countries */,
+				80ADFFE024737C0B0006147C /* CurrentDay */,
+				80ADFFE124737C0E0006147C /* Weekly */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		807EE9F72472ECED00C721A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80B287BC2474961E0011E144 /* Entities */,
+				807EEA072472F53500C721A8 /* Codable */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		807EE9F82472ED1500C721A8 /* CurrentDay */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9FF2472ED1500C721A8 /* CurrentDayForecastService.swift */,
+				807EE9F92472ED1500C721A8 /* Demo */,
+				807EE9FB2472ED1500C721A8 /* Cache */,
+				807EE9FD2472ED1500C721A8 /* Server */,
+			);
+			path = CurrentDay;
+			sourceTree = "<group>";
+		};
+		807EE9F92472ED1500C721A8 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9FA2472ED1500C721A8 /* DemoCurrentDayForecastService.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		807EE9FB2472ED1500C721A8 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9FC2472ED1500C721A8 /* CacheCurrentDayForecastService.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		807EE9FD2472ED1500C721A8 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9FE2472ED1500C721A8 /* ServerCurrentDayForecastService.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		807EEA072472F53500C721A8 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9D82472C22600C721A8 /* Codable.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		807EEA0B2472F7ED00C721A8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9E22472C6FA00C721A8 /* ServiceFactory.swift */,
+				80ADFFD42473655D0006147C /* Countries */,
+				807EE9F82472ED1500C721A8 /* CurrentDay */,
+				807EE9E42472C74000C721A8 /* Weekly */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		807EEA0C2472F85600C721A8 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9EF2472CB2500C721A8 /* DemoService.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		807EEA0D2472FB4400C721A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				807EE9DA2472C22600C721A8 /* ServerService.swift */,
+				807EE9D92472C22600C721A8 /* WeatherError.swift */,
+				807EEA042472F16500C721A8 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		807EEA0E2472FB9300C721A8 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				807EEA0F2472FB9300C721A8 /* CacheService.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		807EEA132472FBB200C721A8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				807EEA102472FB9300C721A8 /* CoreDataStore.swift */,
+				807EEA1424730B5B00C721A8 /* Zelty.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		809D75042474CE36004FF5FE /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				809D75052474CE4C004FF5FE /* Mocks.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		809D75072474CEAD004FF5FE /* Weekly */ = {
+			isa = PBXGroup;
+			children = (
+				809D750A2475189D004FF5FE /* WeeklyInteractorTests.swift */,
+				809D750D24752257004FF5FE /* WeeklyPresenterTests.swift */,
+				809D750F24752843004FF5FE /* WeeklyViewControllerTests.swift */,
+			);
+			path = Weekly;
+			sourceTree = "<group>";
+		};
+		80ADFFD42473655D0006147C /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFD52473659D0006147C /* CountriesService.swift */,
+				80ADFFD7247366000006147C /* Demo */,
+				80ADFFD8247366090006147C /* Cache */,
+				80ADFFD9247366100006147C /* Server */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		80ADFFD7247366000006147C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFDA247366840006147C /* DemoCountriesService.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		80ADFFD8247366090006147C /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFDC247366950006147C /* CacheCountriesService.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		80ADFFD9247366100006147C /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFDE247366A20006147C /* ServerCountriesService.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		80ADFFE024737C0B0006147C /* CurrentDay */ = {
+			isa = PBXGroup;
+			children = (
+				80B2879F247447910011E144 /* Protocols */,
+				80B2878E247438E40011E144 /* View */,
+				80B2879D247446860011E144 /* CurrentDayViewController.swift */,
+				80B2879B247439610011E144 /* CurrentDayModel.swift */,
+				80B28793247439280011E144 /* CurrentDayInteractor.swift */,
+				80B287952474393D0011E144 /* CurrentDayWorker.swift */,
+				80B28799247439530011E144 /* CurrentDayRouter.swift */,
+				80B28797247439480011E144 /* CurrentDayPresenter.swift */,
+			);
+			path = CurrentDay;
+			sourceTree = "<group>";
+		};
+		80ADFFE124737C0E0006147C /* Weekly */ = {
+			isa = PBXGroup;
+			children = (
+				80B287BA247491990011E144 /* View */,
+				80B287A924747E4B0011E144 /* Protocols */,
+				80B287AE2474834E0011E144 /* WeeklyViewController.swift */,
+				80B287AC24747F7B0011E144 /* WeeklyModel.swift */,
+				80B287B0247484E70011E144 /* WeeklyInteractor.swift */,
+				80B287B2247485000011E144 /* WeeklyWorker.swift */,
+				80B287B42474850E0011E144 /* WeeklyRouter.swift */,
+				80B287B6247485630011E144 /* WeeklyPresenter.swift */,
+			);
+			path = Weekly;
+			sourceTree = "<group>";
+		};
+		80ADFFE224737C110006147C /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFFB24739C120006147C /* Protocols */,
+				80ADFFF824738C370006147C /* View */,
+				80ADFFE824737EF80006147C /* CountriesViewController.swift */,
+				80ADFFEC247380580006147C /* CountriesModels.swift */,
+				80ADFFFE24739D9B0006147C /* CountriesInteractor.swift */,
+				80AD000024739F040006147C /* CountriesWorker.swift */,
+				80B2878A2474142D0011E144 /* CountriesRouter.swift */,
+				80AD00022473A1760006147C /* CountriesPresenter.swift */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		80ADFFE324737C600006147C /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFF9247392680006147C /* CountryCell.swift */,
+				80ADFFE524737C810006147C /* CountryCell.xib */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		80ADFFF524738A1C0006147C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFF624738A2C0006147C /* NavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		80ADFFF824738C370006147C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFE924737EF80006147C /* CountriesView.xib */,
+				80ADFFE324737C600006147C /* UITableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80ADFFFB24739C120006147C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFFC24739C2C0006147C /* CountriesProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		80B2878E247438E40011E144 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80B28790247439030011E144 /* CurrentDayView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80B2879F247447910011E144 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				80B287A224744A6E0011E144 /* CurrentDayProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		80B287A4247465DC0011E144 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				80B2878824740E260011E144 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		80B287A5247465EF0011E144 /* ImagesCache */ = {
+			isa = PBXGroup;
+			children = (
+				80B2878C247428CD0011E144 /* WebImageView.swift */,
+			);
+			path = ImagesCache;
+			sourceTree = "<group>";
+		};
+		80B287A824747D260011E144 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				80B287A624747D230011E144 /* Formatters.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		80B287A924747E4B0011E144 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				80B287AA24747E600011E144 /* WeeklyProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		80B287BA247491990011E144 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80B287BD247499BF0011E144 /* UITableViewCell */,
+				80B287B8247491940011E144 /* WeeklyView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80B287BB247495F20011E144 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				80B287A4247465DC0011E144 /* Extension */,
+				80B287A5247465EF0011E144 /* ImagesCache */,
+				80B287A824747D260011E144 /* Formatter */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		80B287BC2474961E0011E144 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				80ADFFEE247381570006147C /* Models.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		80B287BD247499BF0011E144 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				80B287C82474A09E0011E144 /* WeeklyCell.swift */,
+				80B287C92474A09E0011E144 /* WeeklyCell.xib */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		EAA5B506693F01EB556A5A84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89A2A75F195340D272EA0443 /* Pods_Zelty.framework */,
+				C583CC297FA7516431337E10 /* Pods_Zelty_ZeltyUITests.framework */,
+				508AE155C897F24C55ABB2FB /* Pods_ZeltyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		807EE9A02472A1F600C721A8 /* Zelty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 807EE9CB2472A1F800C721A8 /* Build configuration list for PBXNativeTarget "Zelty" */;
+			buildPhases = (
+				439013A1B513590A6B5EAA35 /* [CP] Check Pods Manifest.lock */,
+				807EE99D2472A1F600C721A8 /* Sources */,
+				807EE99E2472A1F600C721A8 /* Frameworks */,
+				807EE99F2472A1F600C721A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zelty;
+			productName = Zelty;
+			productReference = 807EE9A12472A1F600C721A8 /* Zelty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		807EE9B62472A1F800C721A8 /* ZeltyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 807EE9CE2472A1F800C721A8 /* Build configuration list for PBXNativeTarget "ZeltyTests" */;
+			buildPhases = (
+				5E43A9191F0BFA6F60638669 /* [CP] Check Pods Manifest.lock */,
+				807EE9B32472A1F800C721A8 /* Sources */,
+				807EE9B42472A1F800C721A8 /* Frameworks */,
+				807EE9B52472A1F800C721A8 /* Resources */,
+				80B287CC2474CD950011E144 /* Sourcery */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				807EE9B92472A1F800C721A8 /* PBXTargetDependency */,
+			);
+			name = ZeltyTests;
+			productName = ZeltyTests;
+			productReference = 807EE9B72472A1F800C721A8 /* ZeltyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		807EE9C12472A1F800C721A8 /* ZeltyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 807EE9D12472A1F800C721A8 /* Build configuration list for PBXNativeTarget "ZeltyUITests" */;
+			buildPhases = (
+				E75A3A58D179A943A75B43D8 /* [CP] Check Pods Manifest.lock */,
+				807EE9BE2472A1F800C721A8 /* Sources */,
+				807EE9BF2472A1F800C721A8 /* Frameworks */,
+				807EE9C02472A1F800C721A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				807EE9C42472A1F800C721A8 /* PBXTargetDependency */,
+			);
+			name = ZeltyUITests;
+			productName = ZeltyUITests;
+			productReference = 807EE9C22472A1F800C721A8 /* ZeltyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		807EE9992472A1F600C721A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = AYECH;
+				TargetAttributes = {
+					807EE9A02472A1F600C721A8 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					807EE9B62472A1F800C721A8 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 807EE9A02472A1F600C721A8;
+					};
+					807EE9C12472A1F800C721A8 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 807EE9A02472A1F600C721A8;
+					};
+				};
+			};
+			buildConfigurationList = 807EE99C2472A1F600C721A8 /* Build configuration list for PBXProject "Zelty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 807EE9982472A1F600C721A8;
+			productRefGroup = 807EE9A22472A1F600C721A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				807EE9A02472A1F600C721A8 /* Zelty */,
+				807EE9B62472A1F800C721A8 /* ZeltyTests */,
+				807EE9C12472A1F800C721A8 /* ZeltyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		807EE99F2472A1F600C721A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B287CB2474A09E0011E144 /* WeeklyCell.xib in Resources */,
+				80ADFFE724737C810006147C /* CountryCell.xib in Resources */,
+				807EE9B12472A1F800C721A8 /* LaunchScreen.storyboard in Resources */,
+				80B28792247439030011E144 /* CurrentDayView.xib in Resources */,
+				80B287B9247491940011E144 /* WeeklyView.xib in Resources */,
+				807EE9AE2472A1F800C721A8 /* Assets.xcassets in Resources */,
+				80ADFFEB24737EF80006147C /* CountriesView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		807EE9B52472A1F800C721A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		807EE9C02472A1F800C721A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		439013A1B513590A6B5EAA35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zelty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E43A9191F0BFA6F60638669 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZeltyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B287CC2474CD950011E144 /* Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Sourcery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Scripts/sourcery.sh\n";
+		};
+		E75A3A58D179A943A75B43D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zelty-ZeltyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		807EE99D2472A1F600C721A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				807EEA052472F16500C721A8 /* NetworkManager.swift in Sources */,
+				807EEA1624730B5B00C721A8 /* Zelty.xcdatamodeld in Sources */,
+				80B287A724747D230011E144 /* Formatters.swift in Sources */,
+				80B287B1247484E70011E144 /* WeeklyInteractor.swift in Sources */,
+				807EEA012472ED1500C721A8 /* CacheCurrentDayForecastService.swift in Sources */,
+				807EE9E32472C6FA00C721A8 /* ServiceFactory.swift in Sources */,
+				80ADFFD62473659D0006147C /* CountriesService.swift in Sources */,
+				80B2878D247428CD0011E144 /* WebImageView.swift in Sources */,
+				80ADFFEA24737EF80006147C /* CountriesViewController.swift in Sources */,
+				80AD000124739F040006147C /* CountriesWorker.swift in Sources */,
+				807EE9EA2472C74000C721A8 /* DemoWeeklyForecastService.swift in Sources */,
+				807EE9DD2472C22600C721A8 /* ServerService.swift in Sources */,
+				807EEA002472ED1500C721A8 /* DemoCurrentDayForecastService.swift in Sources */,
+				807EE9DC2472C22600C721A8 /* WeatherError.swift in Sources */,
+				80B28798247439480011E144 /* CurrentDayPresenter.swift in Sources */,
+				807EE9DB2472C22600C721A8 /* Codable.swift in Sources */,
+				807EE9F52472CE3900C721A8 /* CacheWeeklyForecastService.swift in Sources */,
+				80B287AF2474834E0011E144 /* WeeklyViewController.swift in Sources */,
+				80B287B7247485630011E144 /* WeeklyPresenter.swift in Sources */,
+				80B287AD24747F7B0011E144 /* WeeklyModel.swift in Sources */,
+				807EE9E02472C45000C721A8 /* Conf.swift in Sources */,
+				807EE9A52472A1F600C721A8 /* AppDelegate.swift in Sources */,
+				80B287962474393D0011E144 /* CurrentDayWorker.swift in Sources */,
+				80B2879A247439530011E144 /* CurrentDayRouter.swift in Sources */,
+				80ADFFDB247366840006147C /* DemoCountriesService.swift in Sources */,
+				80ADFFED247380580006147C /* CountriesModels.swift in Sources */,
+				80B287B3247485000011E144 /* WeeklyWorker.swift in Sources */,
+				80AD00032473A1760006147C /* CountriesPresenter.swift in Sources */,
+				80ADFFDD247366950006147C /* CacheCountriesService.swift in Sources */,
+				807EE9EB2472C74000C721A8 /* WeeklyForecastService.swift in Sources */,
+				807EEA022472ED1500C721A8 /* ServerCurrentDayForecastService.swift in Sources */,
+				80B287A324744A6E0011E144 /* CurrentDayProtocols.swift in Sources */,
+				807EEA122472FB9300C721A8 /* CoreDataStore.swift in Sources */,
+				807EEA112472FB9300C721A8 /* CacheService.swift in Sources */,
+				80B287B52474850E0011E144 /* WeeklyRouter.swift in Sources */,
+				80B2879C247439610011E144 /* CurrentDayModel.swift in Sources */,
+				80B287AB24747E600011E144 /* WeeklyProtocols.swift in Sources */,
+				80ADFFDF247366A20006147C /* ServerCountriesService.swift in Sources */,
+				80B2879E247446860011E144 /* CurrentDayViewController.swift in Sources */,
+				80ADFFF724738A2C0006147C /* NavigationController.swift in Sources */,
+				807EE9A72472A1F600C721A8 /* SceneDelegate.swift in Sources */,
+				80B2878B2474142D0011E144 /* CountriesRouter.swift in Sources */,
+				80B287CA2474A09E0011E144 /* WeeklyCell.swift in Sources */,
+				80ADFFFA247392680006147C /* CountryCell.swift in Sources */,
+				807EE9F02472CB2600C721A8 /* DemoService.swift in Sources */,
+				807EE9EC2472C74000C721A8 /* ServerWeeklyForecastService.swift in Sources */,
+				80B2878924740E260011E144 /* Extension.swift in Sources */,
+				80ADFFEF247381570006147C /* Models.swift in Sources */,
+				80ADFFFF24739D9B0006147C /* CountriesInteractor.swift in Sources */,
+				80B28794247439280011E144 /* CurrentDayInteractor.swift in Sources */,
+				807EEA032472ED1500C721A8 /* CurrentDayForecastService.swift in Sources */,
+				80ADFFFD24739C2C0006147C /* CountriesProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		807EE9B32472A1F800C721A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809D750E24752257004FF5FE /* WeeklyPresenterTests.swift in Sources */,
+				809D751024752843004FF5FE /* WeeklyViewControllerTests.swift in Sources */,
+				809D75062474CE4C004FF5FE /* Mocks.swift in Sources */,
+				809D750B2475189D004FF5FE /* WeeklyInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		807EE9BE2472A1F800C721A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				807EE9C72472A1F800C721A8 /* ZeltyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		807EE9B92472A1F800C721A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 807EE9A02472A1F600C721A8 /* Zelty */;
+			targetProxy = 807EE9B82472A1F800C721A8 /* PBXContainerItemProxy */;
+		};
+		807EE9C42472A1F800C721A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 807EE9A02472A1F600C721A8 /* Zelty */;
+			targetProxy = 807EE9C32472A1F800C721A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		807EE9AF2472A1F800C721A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				807EE9B02472A1F800C721A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		807EE9C92472A1F800C721A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		807EE9CA2472A1F800C721A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		807EE9CC2472A1F800C721A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93BE4FF178E7EAA65093556 /* Pods-Zelty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N2643DJ6X;
+				INFOPLIST_FILE = Zelty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.Zelty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		807EE9CD2472A1F800C721A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28447EEA1804F66BCF3D7C0 /* Pods-Zelty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N2643DJ6X;
+				INFOPLIST_FILE = Zelty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.Zelty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		807EE9CF2472A1F800C721A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8DB46A262EEDCDE9C99BAB /* Pods-ZeltyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N2643DJ6X;
+				INFOPLIST_FILE = ZeltyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.ZeltyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zelty.app/Zelty";
+			};
+			name = Debug;
+		};
+		807EE9D02472A1F800C721A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5668B730A7C02123B7226951 /* Pods-ZeltyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N2643DJ6X;
+				INFOPLIST_FILE = ZeltyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.ZeltyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zelty.app/Zelty";
+			};
+			name = Release;
+		};
+		807EE9D22472A1F800C721A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A19CCDED218A238A83E8FCB5 /* Pods-Zelty-ZeltyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N2643DJ6X;
+				INFOPLIST_FILE = ZeltyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.ZeltyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zelty;
+			};
+			name = Debug;
+		};
+		807EE9D32472A1F800C721A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985AE59F64EC27D629AEF14F /* Pods-Zelty-ZeltyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8N2643DJ6X;
+				INFOPLIST_FILE = ZeltyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leboncoin.ZeltyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zelty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		807EE99C2472A1F600C721A8 /* Build configuration list for PBXProject "Zelty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				807EE9C92472A1F800C721A8 /* Debug */,
+				807EE9CA2472A1F800C721A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		807EE9CB2472A1F800C721A8 /* Build configuration list for PBXNativeTarget "Zelty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				807EE9CC2472A1F800C721A8 /* Debug */,
+				807EE9CD2472A1F800C721A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		807EE9CE2472A1F800C721A8 /* Build configuration list for PBXNativeTarget "ZeltyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				807EE9CF2472A1F800C721A8 /* Debug */,
+				807EE9D02472A1F800C721A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		807EE9D12472A1F800C721A8 /* Build configuration list for PBXNativeTarget "ZeltyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				807EE9D22472A1F800C721A8 /* Debug */,
+				807EE9D32472A1F800C721A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		807EEA1424730B5B00C721A8 /* Zelty.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				807EEA1524730B5B00C721A8 /* Zelty.xcdatamodel */,
+			);
+			currentVersion = 807EEA1524730B5B00C721A8 /* Zelty.xcdatamodel */;
+			path = Zelty.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 807EE9992472A1F600C721A8 /* Project object */;
+}
